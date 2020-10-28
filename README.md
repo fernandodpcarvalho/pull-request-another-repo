@@ -15,20 +15,20 @@ This GitHub Action copies a folder from the current repository to a location in 
 
         - name: Generate test folder
           run: |
-            mkdir test
-            echo "test tile content" > test/test.md
+            mkdir target
+            echo "test file content" > target/test.md
 
         - name: Pull Request folder
           uses: fernandodpcarvalho/pull-request-another-repo@main
           env:
             API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
           with:
-            source_folder: 'test'
-            destination_repo: 'fernandodpcarvalho/teste'
-            destination_folder: 'teste'
+            source_folder: 'target'
+            destination_repo: 'fernandodpcarvalho/teste-github-actions'
+            destination_folder: 'test'
+            destination_branch: 'pull-request-test'
             user_email: 'fernandodpcarvalho@gmail.com'
             user_name: 'fernandodpcarvalho'
-            destination_branch: 'pull-request-test'
 
 # Variables
 * source_folder: The folder to be moved. Uses the same syntax as the `cp` command. Incude the path for any files not in the repositories root directory.

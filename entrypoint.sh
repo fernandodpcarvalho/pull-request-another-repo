@@ -11,7 +11,7 @@ fi
 
 if [ $INPUT_DESTINATION_BRANCH == "main" ] || [ $INPUT_DESTINATION_BRANCH == "master"]
 then
-  echo "Destination branch cannot be 'main' nether 'master'"
+  echo "Destination branch cannot be 'main' nor 'master'"
   return -1
 fi
 
