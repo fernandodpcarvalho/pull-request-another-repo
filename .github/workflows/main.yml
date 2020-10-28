@@ -22,6 +22,6 @@ jobs:
         source_folder: 'test'
         destination_repo: 'fernandodpcarvalho/teste'
         destination_folder: 'teste'
+        destination_branch: 'pull-request-folder'
         user_email: 'fernandodpcarvalho@gmail.com'
         user_name: 'fernandodpcarvalho'
-        destination_branch: 'pull-request-new-test'
