@@ -12,7 +12,8 @@ jobs:
     - name: Generate test folder
       run: |
         mkdir target
-        echo "test file content" > target/test.md
+        mkdir target/destination-folder
+        echo "test file content" > target/destination-folder/test.md
 
     - name: Pull Request folder
       uses: fernandodpcarvalho/pull-request-another-repo@main
