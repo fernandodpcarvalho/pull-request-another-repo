@@ -19,7 +19,7 @@ This GitHub Action copies a folder from the current repository to a location in 
             echo "test tile content" > test/test.md
 
         - name: Pull Request folder
-          uses: fernandodpcarvalho/pull-request-another-repo@master
+          uses: fernandodpcarvalho/pull-request-another-repo@main
           env:
             API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
           with:
