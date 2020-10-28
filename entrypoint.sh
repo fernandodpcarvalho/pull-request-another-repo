@@ -35,7 +35,7 @@ then
   echo "Pushing git commit"
   git push -u origin HEAD:$INPUT_DESTINATION_BRANCH
   echo 'Authentication on git hub cli'
-  gh auth login --with-token $API_TOKEN_GITHUB
+  gh auth login
   echo "Creating a pull request"
   gh pr create --reviewer fernandodpcarvalho
 else
