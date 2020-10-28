@@ -24,4 +24,4 @@ jobs:
         destination_folder: 'teste'
         user_email: 'fernandodpcarvalho@gmail.com'
         user_name: 'fernandodpcarvalho'
-        destination_branch: 'test-pull-request'
+        destination_branch: 'pull-request-new-test'
