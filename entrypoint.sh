@@ -36,7 +36,7 @@ then
   echo "Pushing git commit"
   git push -u origin HEAD:$INPUT_DESTINATION_BRANCH
   echo "Creating a pull request"
-  gh pr create -f -B main -H $INPUT_DESTINATION_BRANCH -r fernandodpcarvalho
+  gh pr create -f -B "main" -H $INPUT_DESTINATION_BRANCH -r $INPUT_USER_NAME
 else
   echo "No changes detected"
 fi
