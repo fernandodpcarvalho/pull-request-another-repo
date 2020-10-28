@@ -17,7 +17,7 @@ jobs:
     - name: Pull Request folder
       uses: fernandodpcarvalho/pull-request-another-repo@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         source_folder: 'test'
         destination_repo: 'fernandodpcarvalho/teste'
